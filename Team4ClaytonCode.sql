@@ -1,4 +1,4 @@
-USE Proj_C4
+USE Proj_C4;
 -- CREATING USERS + Associated Information tables
 CREATE TABLE USERS(
     UserID INT IDENTITY(1,1) primary key not null,
