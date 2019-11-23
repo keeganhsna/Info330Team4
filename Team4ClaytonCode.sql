@@ -158,6 +158,7 @@ CREATE TABLE PLAYER_GAME_STATS(
     PlayerGameStatTypeID INT FOREIGN KEY REFERENCES PLAYER_GAME_STAT_TYPES(PlayerGameStatTypeID) not null
 );
 
+-- Returns all data from
 SELECT
   *
 FROM
