@@ -115,7 +115,6 @@ CREATE TABLE PLAYERS(
     PlayerPositionID INT FOREIGN KEY REFERENCES PLAYER_POSITIONS(PlayerPositionID) not null,
     PlayerStatusID INT FOREIGN KEY REFERENCES PLAYER_STATUS(PlayerStatusID) not null,
     PlayerContractsID INT FOREIGN KEY REFERENCES PLAYER_CONTRACTS(PlayerContractID) not null,
-    PlayerTraitsID INT FOREIGN KEY REFERENCES PLAYER_TRAITS(PlayerTraitsID) not null
 );
 CREATE TABLE PLAYER_HAS_COLLEGES(
     PlayerID INT FOREIGN KEY REFERENCES PLAYERS(PlayerID) not null,
@@ -166,3 +165,10 @@ FROM
 WHERE
   xtype = 'U';
 GO
+
+SELECT *
+FROM PLAYERS
+
+
+-- Inserting Player Position Data
+
