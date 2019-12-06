@@ -157,6 +157,11 @@ CREATE TABLE PLAYER_GAME_STATS(
     PlayerGameStatTypeID INT FOREIGN KEY REFERENCES PLAYER_GAME_STAT_TYPES(PlayerGameStatTypeID) not null
 );
 
+CREATE TABLE PER_GAME_STATS(
+    PerGameStatsID INT IDENTITY(1,1) primary key not null,
+    PlayerID INT FOREIGN KEY REFERENCES PLAYERS(PlayerID) not null
+);
+
 -- Returns all data from
 SELECT
   *
@@ -171,4 +176,3 @@ FROM PLAYERS
 
 
 -- Inserting Player Position Data
-
